@@ -1,0 +1,28 @@
+{
+    "name": "nexuswp/core",
+    "description": "Framework internals for NexusWP: routing, database, migrations, hooks, events, jobs and storage.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["wordpress", "framework", "plugin", "router", "orm", "migration"],
+    "authors": [
+        {
+            "name": "NavidNasro",
+            "homepage": "https://github.com/navidnasro"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*"
+    },
+    "suggest": {
+        "fakerphp/faker": "Required by the seeder layer when NEXUSWP_RUN_SEEDERS is enabled"
+    },
+    "autoload": {
+        "psr-4": {
+            "nexuswp\\core\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
